@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB website</title>
+    <link rel="icon" href="istockphoto-1730122398-1024x1024.jpg">
+    <style>
+        body{
+            background-color:burlywood;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Travel Resevtaion System</h2>
+        <h3> * denote mandotory </h3>
+        <form action="TRS.php"  method="get">
+        <label>Full Name* : </label>
+        <input type="text" name="username" placeholder="Firstname lastname" value=""><br><br>
+
+        <label>Email Adderess* : </label>
+        <input type="email" name="email" placeholder="mail " required><br><br>
+        <label>Select Tour package :   </label>
+        <select name="tour place" id="tour place">
+            <option value="goa">goa</option>
+            <option value=india>india</option>
+            <option value=US>US</option>
+            <option value=UK>Uk</option>
+            <option value=Ingland>Ingland</option>
+
+        </select><br><br>
+        <label>Arrival date  : </label>
+        <input type="date" placeholder="m/d/y" value=""><br><br>
+
+        <label>no of persons* : </label>
+        <input type="text" name="persons" required><br><br>
+
+        <label>what would you want to available  : </label><br><br>
+        <input type="checkbox" name="name" value="Boarding">
+        <label>Boarding</label><br>
+        <input type="checkbox" name="name" value="Boarding">
+        <label>fooding</label><br>
+        <input type="checkbox" name="name" value="Boarding">
+        <label>sight seeing</label><br>
+        <input type="checkbox" name="name" value="Boarding">
+        <label>viewing</label><br><br>
+        <br>
+        <label>discount coupen code: </label>
+        <input type="text" name="code" required><br><br>
+
+        <label>choose the file</label>
+        <input type="file"  name="file"> <br><br>
+        <label>terms and condition : </label>
+        <input type="radio" name="terms and condition" value="i agree">
+        <label>i agree</label>
+        <input type="radio" name="terms and condition" value="i disagree">
+        <label>i disagree</label><br><br>
+        <input type="submit" value="load">
+       <input type="submit" value="complete registration">
+
+
+    </form>
+</div>
+</body>
+</html>
